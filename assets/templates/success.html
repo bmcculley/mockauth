@@ -26,7 +26,7 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
-	        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+	        <li><a href="#">Link <span class="sr-only">(current)</span></a></li>
 	        <li><a href="#">Link</a></li>
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -62,10 +62,26 @@
 
 		<h4 class="text-muted">4xx</h4>
 		<hr class="chr" />
-
+		<div class="container errlst">
+			<ul>
+				<li><a href="protected.php?error=400">400</a></li>
+				<li><a href="protected.php?error=401">401</a></li>
+				<li><a href="protected.php?error=402">402</a></li>
+				<li><a href="protected.php?error=403">403</a></li>
+				<li><a href="protected.php?error=404">404</a></li>
+			</ul>
+		</div>
 		<h4 class="text-muted">5xx</h4>
 		<hr class="chr" />
-		<a href="protected.php?error=500">500</a>
+		<div class="container errlst">
+			<ul>
+				<li><a href="protected.php?error=500">500</a></li>
+				<li><a href="protected.php?error=501">501</a></li>
+				<li><a href="protected.php?error=502">502</a></li>
+				<li><a href="protected.php?error=503">503</a></li>
+				<li><a href="protected.php?error=504">504</a></li>
+			</ul>
+		</div>
 	</div>
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>

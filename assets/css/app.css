@@ -50,3 +50,10 @@
 .container.inner {
 	margin-top: 70px;
 }
+.chr {
+	width: 50%;
+}
+.errlst {
+	margin-left: 20px;
+	width: 90%;
+}
