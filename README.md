@@ -1,6 +1,6 @@
 # mock auth
 
-A simple PHP setup to mock the need for authorization.
+A simple PHP setup to mock the need for authorization, various errors and response headers.
 
 I use this for the testing of some of my admin tools. 
 
