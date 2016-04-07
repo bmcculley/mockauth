@@ -25,6 +25,29 @@ if ( isset( $_COOKIE['mockauth'] ) && isset($_GET['error']) ) {
 			$header = '102 Processing (WebDAV; RFC 2518)';
     		$message = "A WebDAV request may contain many sub-requests involving file operations, requiring a long time to complete the request. This code indicates that the server has received and is processing the request, but no response is available yet.[8] This prevents the client from timing out and assuming the request was lost.";
 			break;
+		// 3xx Redirection
+		// This class of status code indicates the client must take additional
+		// action to complete the request. Many of these status codes are used in URL redirection.
+		case '300':
+			$header = '300 Multiple Choices';
+    		$message = "Indicates multiple options for the resource from which the client may choose. For example, this code could be used to present multiple video format options, to list files with different extensions, or to suggest word sense disambiguation.";
+    		break;
+    	case '301':
+			$header = '301 Moved Permanently';
+    		$message = "This and all future requests should be directed to the given URI.";
+    		break;
+    	case '302':
+    		$header = '302 Found';
+    		$message = "This is an example of industry practice contradicting the standard. The HTTP/1.0 specification (RFC 1945) required the client to perform a temporary redirect (the original describing phrase was \"Moved Temporarily\"), but popular browsers implemented 302 with the functionality of a 303 See Other. Therefore, HTTP/1.1 added status codes 303 and 307 to distinguish between the two behaviours. However, some Web applications and frameworks use the 302 status code as if it were the 303.";
+    		break;
+    	case '303':
+    		$header = '303 See Other';
+    		$message = "The response to the request can be found under another URI using a GET method. When received in response to a POST (or PUT/DELETE), the client should presume that the server has received the data and should issue a redirect with a separate GET message.";
+    		break;
+    	case '303':
+    		$header = '304 Not Modified';
+    		$message = "Indicates that the resource has not been modified since the version specified by the request headers If-Modified-Since or If-None-Match. In such case, there is no need to retransmit the resource since the client still has a previously-downloaded copy.";
+    		break;
 		// 4xx Client Error
 		// The 4xx class of status code is intended for situations in which 
 		// the client seems to have erred.
