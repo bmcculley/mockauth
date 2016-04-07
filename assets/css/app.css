@@ -1,0 +1,52 @@
+* {
+	padding:0;
+	margin:0;
+}
+.navbar-inverse {
+	background-color: rgb(43, 41, 39); 
+	border-top: 2px solid rgb(52, 152, 219);
+	color: rgb(255, 255, 255);
+}
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-brand a,
+.navbar-inverse .navbar-brand a:hover {
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+}
+.navbar-inverse a {
+	color: rgb(255, 255, 255);
+}
+.top {
+	background: rgb(43, 41, 39); 
+	border-top: 2px solid rgb(52, 152, 219);
+	color: rgb(255, 255, 255); 
+	height: 65px; 
+	width: 100%; 
+}
+.top > span {
+	height: 65px; 
+	line-height: 65px; 
+	font-size: 24px; 
+	font-weight: bold; 
+	margin-left: 50px; 
+	float: left; 
+	display: block;
+}
+.login {
+/* 	border: solid 1px #2B2927; */
+	margin: 8% auto 0 auto;
+	width: 400px;
+}
+.login_title {
+	line-height: 36px;
+	height: 36px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+.login_input {
+	margin-bottom: 10px;
+}
+.container.inner {
+	margin-top: 70px;
+}

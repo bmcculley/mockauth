@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/app.css">
+</head>
+<body>
+	<div class="top">
+		<span>{{ project_name }}</span>
+	</div>
+	<div class="login">
+		<form name="loginform" id="loginform" action="" method="post">
+			<div class="login_title">
+				<h3 class="text-muted text-center">Please Login</h3>	
+			</div>
+			
+			<div class="input-group login_input">
+        		<span class="input-group-addon un">Username:</span>
+         		<input type="text" class="form-control" id="username" name="username" />
+      		</div>
+      		<div class="input-group login_input">
+        		<span class="input-group-addon ps">Password:</span>
+         		<input type="password" class="form-control" id="password" name="password" />
+      		</div>
+			<div style="text-align:center;">
+				<input type="submit" name="submit" class="btn btn-primary pull-right" value="Sign in" />
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap-notify.min.js"></script>
+	<script type="text/javascript" src="assets/js/login.js"></script>
+</body>
+</html>
